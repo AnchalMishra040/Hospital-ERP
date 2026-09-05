@@ -1,16 +1,101 @@
-# React + Vite
+# 🏥 Hospital ERP
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A full-stack Hospital Enterprise Resource Planning (ERP) system built to simplify and manage hospital operations through a centralized web application.
 
-Currently, two official plugins are available:
+## 📌 Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Hospital ERP is a role-based hospital management system developed using the MERN stack.
 
-## React Compiler
+The system provides separate functionality for **Patients, Doctors, and Administrators**, allowing users to manage appointments, doctor availability, medical history, doctors, and registered users from one platform.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## ✨ Features
 
-## Expanding the ESLint configuration
+### 👤 Patient
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Secure login using User ID and password
+- View available doctors
+- View doctor information and specialization
+- Book appointments with doctors
+- Select appointment date and time
+- View booked appointments
+- View personal medical history
+
+### 👨‍⚕️ Doctor
+
+- Secure doctor login
+- View appointments booked by patients
+- Manage weekly availability
+- Set available days and working hours
+- Update availability and leave information
+- Search and view patient medical history
+
+### 👨‍💼 Admin
+
+- Secure admin login
+- View registered users
+- View individual user details
+- Add and manage doctor information
+- View registered doctors
+- Role-based access to administrative features
+
+## 🛠️ Tech Stack
+
+### Frontend
+
+- React.js
+- JavaScript
+- HTML
+- CSS
+- Vite
+
+### Backend
+
+- Node.js
+- Express.js
+- REST API
+
+### Database
+
+- MongoDB
+- Mongoose
+
+### Authentication & Security
+
+- JWT (JSON Web Token)
+- bcrypt.js
+- Role-Based Access Control
+
+## 🔐 Authentication
+
+The application uses JWT-based authentication.
+
+Different users are provided access according to their roles:
+
+- `Admin`
+- `Doctor`
+- `Patient`
+
+Passwords are securely hashed using bcrypt before being stored in the database.
+
+## 📂 Project Structure
+
+```text
+Hospital-ERP/
+│
+├── src/
+│   ├── pages/
+│   ├── services/
+│   ├── App.jsx
+│   ├── App.css
+│   └── main.jsx
+│
+├── server/
+│   ├── middleware/
+│   ├── models/
+│   ├── routes/
+│   └── server.js
+│
+├── public/
+├── package.json
+├── vite.config.js
+└── README.md
