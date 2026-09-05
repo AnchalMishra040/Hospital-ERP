@@ -37,6 +37,23 @@ The system provides separate functionality for **Patients, Doctors, and Administ
 - Add and manage doctor information
 - View registered doctors
 - Role-based access to administrative features
+  
+## 📸 Screenshots
+
+### 👨‍💼 Admin Dashboard
+![Admin Dashboard](screenshots/admin-dashboard.png)
+
+### 👨‍⚕️ Manage Doctors
+![Manage Doctors](screenshots/manage-doctors.png)
+
+### 🧑‍💻 Patient Dashboard
+![Patient Dashboard](screenshots/patient-dashboard.png)
+
+### 📅 Doctor Appointments
+![Doctor Appointments](screenshots/doctor-appointments.png)
+
+### 🩺 Doctor Dashboard
+![Doctor Dashboard](screenshots/doctor-dashboard.png)
 
 ## 🛠️ Tech Stack
 
